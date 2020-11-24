@@ -84,9 +84,10 @@ Finally, I normalized the dataset. I did this by dividing all the pixel values b
 
 Here is an example of a traffic sign image before and after grayscaling:
 
-![color][image_color]![gray][image_gray]
+![color][image_color]![gray][image_grayscale]
 
 Here is the same image after being rotated 180 degrees:
+
 ![rotated][image_rotated]
 
 
