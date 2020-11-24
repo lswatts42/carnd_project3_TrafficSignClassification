@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1.1]: ./examples/trafficSign1.jpg "Traffic Sign 1"
+[image1.1]: ./examples/color.png "Traffic Sign 1"
 [image1.2]: ./examples/trafficSign2.jpg "Traffic Sign 2"
 [image1.3]: ./examples/trafficSign3.jpg "Traffic Sign 3"
 [image2]: ./examples/training_histogram.jpg "Training Histogram"
@@ -27,7 +27,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/testing_histogram.png "Testing Histogram"
 [image_color]: ./examples/color.png "Color Sign"
 [image_gray]: ./examples/gray.png "grayscaled sign"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
+[image_rotated]: ./examples/rotated.png "rotated sign"
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
