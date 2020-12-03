@@ -20,23 +20,23 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1.1]: ./examples/color.png "Traffic Sign 1"
-[image1.2]: ./examples/trafficSign2.jpg "Traffic Sign 2"
-[image1.3]: ./examples/trafficSign3.jpg "Traffic Sign 3"
-[image2]: ./examples/histogram_train.jpg "Training Histogram"
-[image3]: ./examples/histogram_valid.jpg "Validation Histogram"
+[image1.2]: ./examples/trafficSign2.png "Traffic Sign 2"
+[image1.3]: ./examples/trafficSign3.png "Traffic Sign 3"
+[image2]: ./examples/histogram_train.png "Training Histogram"
+[image3]: ./examples/histogram_valid.png "Validation Histogram"
 [image4]: ./examples/histogram_test.png "Testing Histogram"
 [image_color]: ./examples/color.png "Color Sign"
 [image_gray]: ./examples/grayscale.png "grayscaled sign"
 [image_rotated]: ./examples/rotated.png "rotated sign"
-[image_stop]: ./german_signs_resized/stop_resized.png "Stop Sign"
-[image_yield]: ./german_signs_resized/yield_resized.png "Yield Sign"
-[image_child]: ./german_signs_resized/children_crossing_resized.png "Children Crossing Sign"
-[image_30]: ./german_signs_resized/30_resized.png "30 Sign"
-[image_no_entry]: ./german_signs_resized/no_entry_resized.png "No Entry Sign"
+[image_stop]: ./german_signs_resized/stop_resized.jpg "Stop Sign"
+[image_yield]: ./german_signs_resized/yield_resized.jpg "Yield Sign"
+[image_child]: ./german_signs_resized/children_crossing_resized.jpg "Children Crossing Sign"
+[image_30]: ./german_signs_resized/30_resized.jpg "30 Sign"
+[image_no_entry]: ./german_signs_resized/no_entry_resized.jpg "No Entry Sign"
 [softmax_stop]: ./examples/softmax_results_stop2.png "Softmax results Stop Sign"
 [softmax_no_entry]: ./examples/softmax_results_no_entry2.png "Softmax results No Entry"
 [softmax_yield]: ./examples/softmax_results_yield2.png "Softmax results Yeild"
-[softmax_30]: ./examples/softmax_results_30kp2h.png "Softmax results 30 km/h"
+[softmax_30]: ./examples/softmax_results_30kph2.png "Softmax results 30 km/h"
 [softmax_child]: ./examples/softmax_results_child2.png "Softmax results Children Crossing"
 
 
@@ -148,7 +148,7 @@ Further research told me to make the model "deeper" by adding layers. So I added
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found using an web image search:
+Here are five German traffic signs that I found using a web image search:
 
 ![stop][image_stop] ![no entry][image_no_entry] ![yield][image_yield] 
 ![30 kph][image_30] ![child][image_child]
@@ -178,13 +178,13 @@ Each of the decisions that the model made on the new signs was made with very hi
 ![stop softmax][softmax_stop]
 
 ##### No Entry Sign:
-![stop no entry][softmax_no_entry]
+![no entry softmax][softmax_no_entry]
 
 ##### Yield Sign:
-![stop yield][softmax_yield]
+![yield softmax][softmax_yield]
 
 ##### 30 km/h Sign:
-![stop 30][softmax_30]
+![30 softmax][softmax_30]
 
 ##### Children Crossing Sign:
-![stop child][softmax_child]
+![child softmax][softmax_child]
