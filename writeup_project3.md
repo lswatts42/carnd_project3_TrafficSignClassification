@@ -62,7 +62,7 @@ signs data set:
 * The size of the validation set is 4410 samples
 * The size of test set is 12630 samples
 * The shape of a traffic sign image is 32 x 32 x 3 pixels
-* The number of unique classes/labels in the data set is 42
+* The number of unique classes/labels in the data set is 43
 
 #### 2. Include an exploratory visualization of the dataset.
 
@@ -122,7 +122,7 @@ My final model consisted of the following layers:
 | Fully connected       | input: 320, output: 84                        |
 | RELU6                 |                                               |
 | Dropout               |                                               |
-| Fully Connected       | input: 84, output: 42                         |
+| Fully Connected       | input: 84, output: 43                         |
 | Softmax				|           									|
  
 
@@ -135,9 +135,9 @@ Another way I discouraged overfitting was by incorporating dropout in the traini
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 99.2%
-* validation set accuracy of 95.3% 
-* test set accuracy of 93.0%
+* training set accuracy of 99.9%
+* validation set accuracy of 94.7% 
+* test set accuracy of 94.1%
 
 I started with the LeNet architecture and set about improving it from there. I chose LeNet because it does well with small images and is a very lightweight model with few parameters. The initial accurcy was about 88-90%. I started with color images as well, though I later switched to grayscale and achieved a slight improvement in performance and training time. The first changes I made were inspired by [this paper](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) by Pierre Sermanet and Yann Lecun. They took the output of the first pooling layer and added it to the output of the second pooling layer before it went through the fully connected layer. I did the same thing, though the one difference was that I have multiple fully connected layers, so I chose the first one. 
 Another change I made was to the activation function. After a little bit of research, I found that the Relu6 function was a modern version of the Relu function and increased the performance. According to [this paper](http://www.cs.utoronto.ca/~kriz/conv-cifar10-aug2010.pdf), the Relu6 function "encourages the model to learn sparse features earlier" than the normal Relu activation function. 
@@ -172,7 +172,7 @@ The model was able to correctly all 5 of the traffic signs, which gives an accur
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-Each of the decisions that the model made on the new signs was made with very high certainty, at least 95%. Below are the bar graphs for each of the signs, with the top 5 softmax probabilities and their corresponding signs. 
+Many of the decisions that the model made on the new signs were made with very high certainty, Even up to 99%. Below are the bar graphs for each of the signs, with the top 5 softmax probabilities and their corresponding signs. 
 
 ##### Stop Sign:
 ![stop softmax][softmax_stop]
