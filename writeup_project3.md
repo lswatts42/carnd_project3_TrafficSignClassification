@@ -33,11 +33,11 @@ The goals / steps of this project are the following:
 [image_child]: ./german_signs_resized/children_crossing_resized.jpg "Children Crossing Sign"
 [image_30]: ./german_signs_resized/30_resized.jpg "30 Sign"
 [image_no_entry]: ./german_signs_resized/no_entry_resized.jpg "No Entry Sign"
-[softmax_stop]: ./examples/softmax_results_stop2.png "Softmax results Stop Sign"
-[softmax_no_entry]: ./examples/softmax_results_no_entry2.png "Softmax results No Entry"
-[softmax_yield]: ./examples/softmax_results_yield2.png "Softmax results Yeild"
-[softmax_30]: ./examples/softmax_results_30kph2.png "Softmax results 30 km/h"
-[softmax_child]: ./examples/softmax_results_child2.png "Softmax results Children Crossing"
+[softmax_stop]: ./examples/softmax_results_stop3.png "Softmax results Stop Sign"
+[softmax_no_entry]: ./examples/softmax_results_no_entry3.png "Softmax results No Entry"
+[softmax_yield]: ./examples/softmax_results_yield3.png "Softmax results Yeild"
+[softmax_30]: ./examples/softmax_results_30kph3.png "Softmax results 30 km/h"
+[softmax_child]: ./examples/softmax_results_child3.png "Softmax results Children Crossing"
 
 
 
@@ -161,14 +161,14 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction   					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   							| 
+| Stop Sign      		| _60 km/h_   							| 
 | No Entry     			| No Entry 								|
 | Yield					| Yield	 								|
 | 30 km/h	      		| 30 km/h  				 				|
 | Children Crossing		| Children Crossing   					|
 
 
-The model was able to correctly all 5 of the traffic signs, which gives an accuracy of 100%. This makes sense to me, because the pictures I used were all in sunny, bright conditions whereas the test dataset had a lot of darker images. But even then, I'm sure my accuracy would decrease if I had more samples, and it would get close to 94%, which was the result from the main part of the project. I ran it a few more times, and half of the time it got 80% accuracy, and the other half it was perfect. It seems to depend on the end result of the training. 
+The model was able to correctly 4 out of the 5 of the traffic signs, which gives an accuracy of 80%. This makes sense to me, because the pictures I used were a bit more zoomed in than the training set. I ran it a few more times, and half of the time it got 80% accuracy, and the other half it was perfect. It seems to depend on when it stops training. 
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
